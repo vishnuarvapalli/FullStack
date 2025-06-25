@@ -1,0 +1,14 @@
+h1{
+    color:red;
+    background-color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+}
+.p{
+    color:aqua;
+    background-color: antiquewhite;
+}
+.b{
+    color: aqua;
+    border-radius: 5px;
+}
