@@ -105,3 +105,70 @@ targetData(101)
         console.log("Third fecth:",result);
         return getData(104);
     })
+    .catch(err => {
+        console.error("Error Occurred",err);
+    });
+const getpromise=()=>{
+    return new Promise((resolve, reject) => {
+        console.log("I am a promise");
+        resolve("Promise resolved");
+    });
+}
+let result = getpromise();
+result
+    .then(data=>{
+        console.log(data); 
+    });
+    result .catch(error=>{
+        console.error("Error occured",error); 
+    });
+function asyncFunc1() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data2");
+            resolve("success")
+        },4000);
+    });
+}
+
+function asyncFunc2() {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data2");
+            resolve("success")
+        },4000);
+    });
+}
+console.log("Fecting data1..");
+let p1 = asyncFunc1();
+p1.then((data)=>{
+    console.log("Data fetched:",data);
+    console.log("fecthing data2...");
+    let p2 = asyncFunc2();
+    p2.then((data)=>{
+        console.log("Data fecthed..",data);
+        
+    });
+})
+function getData(id){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("Fecthing data for id:",id);
+            resolve(id);
+        },1000);
+    });
+}
+
+async function fetchData(){
+    try{
+        const data1 = await getData(101);
+        console.log("First fetch:",data1);
+        const data2 = await getData(102);
+        console.log("Second fetch:",data2);
+        const data3 = await getData(103);
+        console.log("Third fetch:",data3);
+    }catch(error){
+        console.error("Error occured:",error);
+        
+    }
+}
