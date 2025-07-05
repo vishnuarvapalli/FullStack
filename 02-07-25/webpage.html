@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJIO Clone</title>
+  <link rel="stylesheet" href="webpage.css">
+</head>
+<body>
+
+  <header class="header">
+    <center>
+    <div class="logo">AJIO</div>
+  </center>
+<nav class="nav">
+  <div class="search">
+    <input type="text" placeholder="Search AJIO">
+  </div>
+
+  <a href="webpage.html">Home</a>
+  <a href="men.html">Men</a>
+  <a href="women.html">Women</a>
+  <a href="kids.html">Kids</a>
+  </nav>
+  <nav class="nav">
+  <label class="cart-add"></label>
+
+  <div class="dropdown">
+    <input type="checkbox" id="toggle" />
+    <label for="toggle" class="dropbtn">☰</label>
+    <div class="dropdown-content">
+      <a href="#Login">Login</a>
+      <a href="#signup">Sign-Up</a>
+      <a href="#settings">Customer Care</a>
+    </div>
+  </div>
+
+  <button id="cart-icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart" width="30" height="30">
+  <span id="cart-count">0</span>
+</button>
+</nav>
+
+    
+  </header>
+
+  <section class="heading">
+    <div class="heading-content">
+        <p>Discover latest Trends <bold style="color: rgb(9, 76, 210);">SALE upto 70% off <a href="grab">grab now !</a> </bold></p>
+    </div>
+  </section>
+  <section class="image1">
+    <div class="image1-content">
+    </div>
+  </section>
+  <section class="banner">
+    <div class="image-content">
+      <marquee><img src="https://assets.ajio.com/medias/sys_master/images/images/hed/h05/32812405293086/05062021-M-KurtasPage-brandsyoulove-svrnaa.jpg" alt="image">
+      <img src="https://assets.ajio.com/medias/sys_master/images/images/hf6/hdd/17178931560478/18062020-M-Unisex-Trends-AJIO-60to80Off.jpg" alt="image">
+      <img src="https://assets.ajio.com/medias/sys_master/images/images/h0a/h2e/50046445781022/Top-banner-carousel-banner-2.jpg" alt="image">
+      <img src="https://assets.ajio.com/cms/AJIO/MOBILE/M-PDS-WHP-1.0-Mainbanner-P2-Kianahouseoffashion-Berrylicious-min60-02072025.jpg" alt="image">
+      <img src="https://assets.ajio.com/medias/sys_master/images/images/h19/h6a/12987798224926/Trends-Trending-Now-Banner-Mobile.jpg" alt="image">
+      </marquee>
+      </div>
+  </section>
+  
+  <section class="top-trends">
+    <div class="trends-content">
+      <h2 class="h2">Top Trends</h2>
+    <div class="container">
+      <div class="product">
+        <figure>
+          <img class="image" src="https://assets.ajio.com/medias/sys_master/root/20211001/Ivts/6156ca4cf997ddce89eaeb7f/-473Wx593H-410294160-1200-MODEL.jpg" alt="Men Regular Shirt">
+          <figcaption>
+            Armani Exchange T shirt
+            <p><a href="#" style="color: black;">Typographic Print Crew-Neck T-shirt</a></p>
+            <p><del style="color: red;">&#8377;999</del></p>
+            <p>₹499</p>
+            <button onclick="addToCart('Product 1', 19.99)"class="addcart">Add to Cart</button>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="product">
+        <figure>
+          <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIopNzLtoAtAUmylmfG1sp3L34PMHtzlgToQ&s" alt="Men Casual Shirt">
+          <figcaption>
+            Men Casual Shirt
+            <p><a href="#" style="color: black;">SNITCH Store Online Buy SNITCH products online in India. - Ajio</a></p>
+            <p><del style="color: red;">&#8377;999</del></p>
+            <p>₹499</p>
+            <button onclick="addToCart('Product 1', 19.99)"class="addcart">Add to Cart</button>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="product">
+        <figure>
+          <img class="image" src="https://assets.ajio.com/medias/sys_master/root/20220718/96Pa/62d5471caeb26921af800b87/-473Wx593H-441145327-darkblue-MODEL.jpg" alt="Summer Combo">
+          <figcaption>
+            Jeans wear
+            <p><a href="#" style="color: black;">Men Mid-Rise Skinny Fit Jeans</a></p>
+            <p><del style="color: red;">&#8377;1499</del></p>
+            <p>₹749</p>
+            <button onclick="addToCart('Product 1', 19.99)"class="addcart">Add to Cart</button>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="product" id="puma t shirt">
+        <figure>
+          <img class="image" src="https://assets.ajio.com/medias/sys_master/root/20250530/cQLt/6839c3b655340d4b4f7133db/puma_black_mens_striped_logo_graphic_slim_fit_t-shirt.jpg" alt="puma t shirt">
+          <figcaption>
+            Puma Wardobe
+            <p><a href="#" style="color: black;">Top puma products for sale</a></p>
+            <p><del style="color: red;">&#8377;2799</del></p>
+            <p>₹1499</p>
+            <button onclick="addToCart('Product 1', 19.99)"class="addcart">Add to Cart</button>
+
+            <!-- <button class="add-to-cart" data-product-id="puma t shirt" data-product-name="puma t shirt" data-product-price="₹1499">Add to Cart</button> -->
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="product">
+        <figure>
+          <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMe6VLo0Mbx2-oVI4jzPDGzDumeIuNfVyPoA&s" alt="Women's Regular Shirt">
+          <figcaption>
+            Women's Regular Shirt
+            <p><a href="#" style="color: black;">DEELMO Women's Casual Button Down Long Sleeve Linen Shirt</a></p>
+            <p><del style="color: red;">&#8377;699</del></p>
+            <p>&#8377;349</p>
+            <button onclick="addToCart('Product 1', 19.99)"class="addcart">Add to Cart</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
