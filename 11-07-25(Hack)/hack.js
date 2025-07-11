@@ -5,6 +5,16 @@ const questions = [
   { q: "What is the capital of France?", options: ["Berlin", "Madrid", "Paris"], answer: "Paris" },
   { q: "What is the largest planet in our solar system?", options: ["Earth", "Jupiter", "Mars"], answer: "Jupiter" },
   { q: "Which is leap year?", options: ["2011", "2012", "2013"], answer: "2011" },
+    { q: "What is the boiling point of water?", options: ["100°C", "90°C", "80°C"], answer: "100°C" },
+  { q: "What is the chemical symbol for gold?", options: ["Au", "Ag", "Pb"], answer: "Au" },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    { q: "Who wrote 'Romeo and Juliet'?", options: ["Mark Twain", "William Shakespeare", "Charles Dickens"], answer: "William Shakespeare" },
+  { q: "What is the capital of Japan?", options: ["Tokyo", "Seoul", "Beijing"], answer: "Tokyo" },
+    { q: "What is the hardest natural substance on Earth?", options: ["Gold", "Diamond", "Iron"], answer: "Diamond" },
+    { q: "What is the largest mammal?", options: ["Elephant", "Blue Whale", "Giraffe"], answer: "Blue Whale" },
+    { q: "What is the main ingredient in guacamole?", options: ["Tomato", "Avocado", "Pepper"], answer: "Avocado" },
+    { q: "What is the smallest country in the world?", options: ["Vatican City", "Monaco", "Nauru"], answer: "Vatican City" },
+    { q: "What is the capital of Australia?", options: ["Sydney", "Canberra", "Melbourne"], answer: "Canberra" },
+    { q: "What is the largest desert in the world?", options: ["Sahara", "Gobi", "Kalahari"], answer: "Sahara" },
 ];
 
 let current = 0;
